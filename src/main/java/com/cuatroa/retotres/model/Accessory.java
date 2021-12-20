@@ -25,10 +25,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 public class Accessory {
     @Id
+    
     private String reference;
     private String brand;
     private String category;
-    private String material;
+    private String inches;
+    private String resolution;
+    private String aspectRatio;
     private String description;
     private boolean availability = true;
     private double price;

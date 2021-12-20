@@ -50,9 +50,15 @@ public class AccessoryService {
                 if (accesory.getCategory() != null) {
                     accesoryDb.get().setCategory(accesory.getCategory());
                 }
+                if (accesory.getInches() != null) {
+                    accesoryDb.get().setInches(accesory.getInches());
+                }
 
-                if (accesory.getMaterial() != null) {
-                    accesoryDb.get().setMaterial(accesory.getMaterial());
+                if (accesory.getResolution() != null) {
+                    accesoryDb.get().setResolution(accesory.getResolution());
+                }
+                if (accesory.getAspectRatio() != null) {
+                    accesoryDb.get().setAspectRatio(accesory.getAspectRatio());
                 }
 
                 if (accesory.getDescription() != null) {
