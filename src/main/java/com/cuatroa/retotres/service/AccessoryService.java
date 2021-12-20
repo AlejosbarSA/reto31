@@ -40,8 +40,8 @@ public class AccessoryService {
 
     public Accessory update(Accessory accesory) {
 
-        if (accesory.getReference() != null) {
-            Optional<Accessory> accesoryDb = accesoryRepository.getAccesory(accesory.getReference());
+        if (accesory.getBrand() != null) {
+            Optional<Accessory> accesoryDb = accesoryRepository.getAccesory(accesory.getBrand());
             if (!accesoryDb.isEmpty()) {
                 if (accesory.getBrand() != null) {
                     accesoryDb.get().setBrand(accesory.getBrand());
